@@ -1,10 +1,11 @@
 /* add google font */
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: white;
+  -webkit-text-stroke-color: red;
   /* background-color: rgb(12, 12, 12); */
   background-color: black;
 }
@@ -74,14 +75,9 @@ nav ul {
 .portfolio_title,
 .about-me-title {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
-}
-
-.h3_side {
-  text-align: center;
-  margin-top: 3rem;
-  /* font-size: 2rem; */
 }
 
 .project ul {
@@ -106,22 +102,40 @@ nav ul {
   display: flex;
   border-radius: 0.625rem;
   height: 20rem;
-  width: 20rem;
+  width: 14rem;
   margin: 0 1rem;
 }
 
-.smaller-box {
-  border: 1px solid white;
-  border-radius: 1.25rem;
-  margin: 2rem auto;
+.smaller-box{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.coding{
+  width: 9rem;
   height: 8rem;
+}
+
+.box img{
+  /* border: 1px solid white;
+  border-radius: 1.50rem; */
+  margin: 2rem auto;
+  height: 10rem;
   width: 15rem;
+}
+
+.box-text{
+  text-align: center;
 }
 
 .box-section{
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content:center;
+  padding: 1rem;
+  gap: 1rem;
+
 }
 
 /* color */
@@ -133,17 +147,6 @@ svg path{
 svg{
   width: 2rem;
   height: 2rem;
-}
-
-footer {
-  /* height: 70vh; */
-  /* display: flex; */
-}
-
-footer p {
-  font-size: 0.8rem;
-  justify-content: center;
-  align-content: end;
 }
 
 .about {
@@ -158,10 +161,13 @@ footer p {
   width: 100%;
 }
 
-/* 
-p {
-  text-align: center;
-  font-size: 1.5rem;
-} 
+/* idk if this is the right way of using flex */
+footer {
+  display: flex;
+}
 
-*/
+footer p {
+  font-size: 0.7rem;
+  align-content: end;
+}
+
