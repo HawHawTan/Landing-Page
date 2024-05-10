@@ -1,11 +1,12 @@
 /* add google font */
 body {
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  -webkit-text-stroke-color: red;
   /* background-color: rgb(12, 12, 12); */
   background-color: black;
 }
@@ -16,10 +17,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  /* font-family: Georgia, Times, "Times New Roman", serif; */
   margin: 0.5em 0;
 }
-
 
 nav {
   display: flex;
@@ -47,7 +47,7 @@ a:active {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: skyblue;
 }
 
@@ -61,21 +61,21 @@ nav ul {
 
 /* check the height */
 .name {
-  height: 80vh;
+  height: calc(93vh - 5.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .name_title {
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 /* check the margin */
 .portfolio_title,
 .about-me-title {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   font-size: 2rem;
 }
@@ -96,29 +96,42 @@ nav ul {
 }
 
 .box {
-  border: 2px solid white;
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  display: flex;
+  border: 2px solid white;
   border-radius: 0.625rem;
   height: 20rem;
   width: 14rem;
   margin: 0 1rem;
 }
 
-.smaller-box{
+@media (min-width: 50em) {
+  .projects-wrapper,
+  .about {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.smaller-box {
   display: flex;
   justify-content: center;
   padding: 1rem;
   margin: 1rem;
 }
 
-.coding{
-  width: 9rem;
-  height: 8rem;
+.coding {
+  width: 7rem;
+  height: 6rem;
 }
 
-.box img{
+.box img {
   /* border: 1px solid white;
   border-radius: 1.50rem; */
   margin: 2rem auto;
@@ -126,25 +139,23 @@ nav ul {
   width: 15rem;
 }
 
-.box-text{
+.box-text {
   text-align: center;
 }
 
-.box-section{
+.box-section {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   padding: 1rem;
   gap: 1rem;
-
 }
 
 /* color */
-svg path{
+svg path {
   fill: white;
-
 }
 
-svg{
+svg {
   width: 2rem;
   height: 2rem;
 }
@@ -170,4 +181,3 @@ footer p {
   font-size: 0.7rem;
   align-content: end;
 }
-
