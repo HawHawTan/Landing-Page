@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/normalize-fwd.css"/>
     <link rel="stylesheet" href="style/style.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">  
     <title>Haw Haw Tan</title>
   </head>
   <body>  
@@ -15,9 +21,8 @@
         <nav>
           <img src="image/logo.png" alt="Haw Haw logo">
           <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio </a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio </a></li>
+            <li><a href="#about-me">About Me</a></li>
           </ul>
         </nav>
         <div class="name">
@@ -27,8 +32,8 @@
         <!-- https://fonts.google.com/specimen/Freeman -->
         <!-- ask about lacks heading when using validator -->
     <main>  
-      <section class="portfolio">
-        <h2 class="portfolio_title">My Portfolio</h2>
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio_title">Portfolio</h2>
         <div class="projects-wrapper">
           <section class="project">
               <ul>
@@ -132,16 +137,13 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about-me" id="about-me">
       <h2 class="about-me-title">About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet
-          maiores commodi! Ducimus enim quia ad cumque rerum perferendis eveniet
-          dicta praesentium odit asperiores facere, dolore libero quo aspernatur
-          mollitia.
+          Hello! My name is Haw Haw Tan, I am currently studying Front-End Web Developer at BCIT in Vancouver. My goal as a developer is to challenge myself to write code that is more efficient with new techniques and to provide the best user experience with smooth and responsive animation. 
         </p>
         <footer>
-          <p>&copy; Haw Haw Tan Portfilo 2024. No rights reserved.</p>
+          <p class="foot-p">&copy; Haw Haw Tan Portfilo 2024. No rights reserved.</p>
         </footer>
     </section>
 
