@@ -1,25 +1,71 @@
-/* add google font */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+/* Typography
+--------------------------------------------- */
 body {
-  font-family: "Poetsen One", sans-serif;
+  font-family: 'Freeman';
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  /* background-color: rgb(12, 12, 12); */
   background-color: black;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: Georgia, Times, "Times New Roman", serif; */
+
+/* Elements
+--------------------------------------------- */
+li {
+  list-style-type: none;
 }
 
+/* Links
+--------------------------------------------- */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a{
+  font-size: 1.2rem;
+  color: white;
+}
+
+a:visited {
+  /* color: skyblue; */
+}
+
+a:hover {
+  color: skyblue;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/* Header
+--------------------------------------------- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,27 +78,6 @@ nav img {
   height: 45px;
   border: 1px solid white;
   border-radius: 10px;
-  margin-left: 1rem;
-}
-
-nav li {
-  list-style-type: none;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: skyblue;
-}
-
-a{
-  font-size: 1.2rem;
 }
 
 nav ul {
@@ -63,7 +88,6 @@ nav ul {
   padding: 0;
 }
 
-/* check the height */
 .name {
   height: calc(93vh - 5.5rem);
   display: flex;
@@ -75,7 +99,28 @@ nav ul {
   font-size: 3rem;
 }
 
-/* check the margin */
+@media (min-width: 50em) {
+  .nav-img{
+    margin-left: 0.5rem;
+  }
+
+  nav ul{
+    justify-content: space-around;
+    width: 20%;
+  }
+
+  nav a{
+    font-size: 1.5rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+}
+
+
+/* Main
+--------------------------------------------- */
 .portfolio_title{
   text-align: center;
   margin: 3rem 0;
@@ -83,7 +128,6 @@ nav ul {
 }
 
 .project ul {
-  list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -91,8 +135,7 @@ nav ul {
   gap: 2rem;
 }
 
-.projects-wrapper,
-.about {
+.projects-wrapper{
   max-width: 50rem;
   margin: 0 auto;
 }
@@ -108,38 +151,6 @@ nav ul {
   margin: 0 1rem;
 }
 
-@media (min-width: 50em) {
-  nav ul{
-    justify-content: space-around;
-    width: 20%;
-  }
-
-  a{
-    font-size: 1.5rem;
-  }
-
-  h2{
-    font-size: 3rem;
-  }
-  
-  .name_title{
-    font-size: 4rem;
-  }
-
-  .projects-wrapper,
-  .about-me {
-    max-width: 70rem;
-    margin: 0 auto;
-  }
-
-  p,.about-me footer p{
-    font-size: 1.5rem;
-  }
-
-  
-
-}
-
 .smaller-box {
   display: flex;
   justify-content: center;
@@ -147,17 +158,9 @@ nav ul {
   margin: 1rem;
 }
 
-.coding {
+.coding-logo {
   width: 7rem;
   height: 6rem;
-}
-
-.box img {
-  /* border: 1px solid white;
-  border-radius: 1.50rem; */
-  margin: 2rem auto;
-  height: 10rem;
-  width: 15rem;
 }
 
 .box-text {
@@ -169,6 +172,13 @@ nav ul {
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
+}
+
+.box-para{
+  text-align: end;
+  padding-right: 0.8rem;
+  padding-top: 1rem;
+  margin: 0;
 }
 
 /* color */
@@ -193,16 +203,44 @@ svg {
   align-content: center;
   margin: 0;
 }
-.about-me p{
+.about-me-para{
   line-height: 2;
+  text-align: center;
 }
 
-/* idk if this is the right way of using flex */
+@media (min-width: 50em) {
+  .name_title{
+    font-size: 5rem;
+  }
+
+  .projects-wrapper,
+  .about-me {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .about-me-para{
+    font-size: 1.5rem;
+  }
+
+  .box-para{
+    font-size: 1rem;
+  }
+}
+
+/* Footer
+--------------------------------------------- */
 footer {
   display: flex;
+  justify-content: center;
 }
 
-footer p {
+.foot-para{
   font-size: 0.7rem;
-  align-content: end;
+}
+
+@media (min-width: 50em) {
+  .foot-para{
+    font-size: 1.2rem;
+  }
 }
