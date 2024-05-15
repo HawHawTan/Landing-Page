@@ -89,14 +89,15 @@ nav ul {
 }
 
 .name {
-  height: calc(93vh - 5.5rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .name_title {
   font-size: 3rem;
+  height: calc(93vh - 5.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 50em) {
@@ -141,9 +142,7 @@ nav ul {
 }
 
 .box {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  /* display: block; */
   border: 2px solid white;
   border-radius: 0.625rem;
   height: 20rem;
@@ -152,8 +151,7 @@ nav ul {
 }
 
 .smaller-box {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 1rem;
   margin: 1rem;
 }
@@ -164,6 +162,7 @@ nav ul {
 }
 
 .box-text {
+  display: block;
   text-align: center;
 }
 
